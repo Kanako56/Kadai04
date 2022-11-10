@@ -6,38 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicine Notes</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/script.js"></script>  
 </head>
 <body>
     <header>
-        <h1>Medicine Notes</h1>
+        <h1>MedicineNotes</h1>
     </header>
     <main>
 
-    <button id="key">Select date</button>
-    <button id="value">💊Please push or modify me💊</button>
-    <div id="content">
-        <label for="memo">Memo:</label>
-        <textarea id="memo"></textarea>
-    </div>
+    <label for="key" id="datetext">
+        Select date:
+    </label>
+    <input id="key" type="date">
+      
+ 
+        <label for="value" id="valuetext">
+            Please fill in the name of medicines and number of pills:
+        </label>
+        <textarea id="value">
+            Vitamin C 1tab
+        </textarea>
     
+   
     
-    <label for="happy" id="feelings">How do you feel today? Please select one Emoji</label>
-    <div id="emoji">
-        <button id="happy">😄</button>
-        <button id="normal">🙂</button>
-        <button id="notgood">😵</button>
-    </div>
+    <label for="value1" id="feelings">
+        How do you feel today? Please select one Emoji
+    </label>
+    <select id="value1">
+        <option value="happy">😄</option>
+        <option value="normal">🙂</option>
+        <option value="notgood">😵</option>
+        </select>
 
-    <div id="managedata">
+        
+    <label for="value2" id="memoarea">    
+        MEMO / TO DO:
+    </label>
+    <textarea id="value2"></textarea>
+
+
+    <div class="managedata">
         <button id="save">Save</button>
         <button id="clear">Clear</button>
     </div>    
 
-
-
-
-
+    <table id="list">
+        <tr>
+            <td>date</td>
+            <td>Medicine</td>
+            <td>Feelings</td>
+            <td>MEMO/TO DO</td>
+        </tr>
+    </table>
+  
+   
     </main>
     
 </body>
