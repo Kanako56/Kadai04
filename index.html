@@ -18,49 +18,56 @@
     <label for="key" id="datetext">
         Select date:
     </label>
-    <input id="key" type="date">
+    <input id="key" type="date"></input>
       
- 
-        <label for="value" id="valuetext">
+        <label for="value0" id="valuetext">
             Please fill in the name of medicines and number of pills:
         </label>
-        <textarea id="value">
+        <textarea id="value0">
             Vitamin C 1tab
         </textarea>
     
-   
-    
+
     <label for="value1" id="feelings">
         How do you feel today? Please select one Emoji
     </label>
+
+    <select style="width:0px"> 
+        <option value="happy">😄</option>
+        <option value="normal">🙂</option>
+        <option value="notgood">😵</option>
+    </select>
+
+  
     <select id="value1">
         <option value="happy">😄</option>
         <option value="normal">🙂</option>
         <option value="notgood">😵</option>
-        </select>
+    </select>
 
-        
+  
     <label for="value2" id="memoarea">    
-        MEMO / TO DO:
+        MEMO / To Do:
     </label>
     <textarea id="value2"></textarea>
-
 
     <div class="managedata">
         <button id="save">Save</button>
         <button id="clear">Clear</button>
     </div>    
 
-    <table id="list">
+    <table id="list1">
         <tr>
-            <td>date</td>
+            <td>Date</td>
             <td>Medicine</td>
             <td>Feelings</td>
-            <td>MEMO/TO DO</td>
+            <td>MEMO/To Do</td>
         </tr>
     </table>
-  
-   
+
+    <table id="list">
+    </table>
+
     </main>
     
 </body>
